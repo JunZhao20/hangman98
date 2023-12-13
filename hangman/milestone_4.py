@@ -1,17 +1,58 @@
 import random as rd
 
 class Hangman:
+    """
+    This class is used to operate a hangman game.
     
+    Attributes : 
+        word_list (list) : list of words
+        num_lives (int) : the number of lives the player has
+        word (str) : a randomly picked word
+        word_guessed (list) : a list of the letters of the word, with _ for each letter not yet guessed
+        num_letters (int) : the number of unique letters that i have not been guessed yet
+        list_of_guesses (list) : the list of letters have have been guessed
+        
+    """
     def __init__(self, word_list,num_lives=5 ):
         self.word_list = word_list
         self.num_lives = num_lives
         self.word = rd.choice(word_list)
+        
+        """
+        Initializes word by using random module and using choice to pick one item from word_list.
+        
+        variable : 
+            str : string of 1 random word from word_list
+        """
         self.word_guessed = ['_' for i in range(len(self.word))]
+        
+        """
+        Initializes word_guessed using list comprehension calculate the length of random word to replace with '_'
+        
+        variable:
+            list : list of '_' wit the same number of letters in self.word
+        
+        """
+        
         self.num_letters = len(set(self.word))
+        """
+        Initializes num_letters by using set() and len() to get the total unique letters within self.word
+        
+        variable :
+            int : Number of unique letters in word
+        
+        """
         self.list_of_guesses = []
         
 
     def check_guess(self, guess):
+        """
+        This function is used to check the users guess to the letters in word to see if its correct or incorrect.
+        
+        args : 
+            guess (str) : takes in guess from ask_for_input function to go through checking it with the letters in word.
+        
+        """
         guess = guess.lower()
         print(guess)
         if guess in self.word:
@@ -28,6 +69,11 @@ class Hangman:
         
 
     def ask_for_input(self):
+        """
+        This function is used to asks the users for a letter, it would validate the input to see if its is a alphabet and is 1 letter.
+        
+        
+        """
         while True:
             print(self.word)
             print(self.word_guessed)
@@ -39,6 +85,9 @@ class Hangman:
             else:
                 self.check_guess(guess)
                 self.list_of_guesses.append(guess)
+
+
+
 
 player1 = Hangman(['mangos', 'bananas', 'grapes', 'oranges', 'watermelon'])
 
