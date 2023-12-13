@@ -12,12 +12,14 @@ The aim of this project is to create a game using OOP to further my knowledge on
 
 - Ask for user to guess a word one letter at a time
 - letter validation for applicable letters (single letter and is in the alphabet)
+- Player has 5 lives
+- Checks wether a letter has been used or not
 
 ## Installation:
 
 1.  Clone the repository to your preferred directory
 
-(git clone https://github.com/JunZhao20/hangman98.git)
+        'git clone https://github.com/JunZhao20/hangman98.git'
 
 ## File navigation:
 
@@ -27,9 +29,11 @@ PATH: your-directory/hangman98/hangman
 
 1.  Once you are are in the current directory (Check File Navigation)
 
-2.  Run this in the terminal:
+2.  Put in your list of words in to Hangman.play_game(['your list'])
 
-        'python3 milestone_4.py'
+3.  Run this in the terminal:
+
+        'python3 milestone_5.py'
 
 ## How to play:
 
