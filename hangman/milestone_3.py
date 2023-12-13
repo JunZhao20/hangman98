@@ -2,13 +2,13 @@ import random as rd
 
 list_of_words = ['mangos', 'bananas', 'grapes', 'oranges', 'watermelon']
 
-randomWord = rd.choice(list_of_words)
-print(randomWord)
+random_word = rd.choice(list_of_words)
+print(random_word)
 
 def check_guess(guess):
     guess = guess.lower()
     if guess.isalpha() and len(guess) == 1:
-        if guess in list(randomWord):
+        if guess in list(random_word):
             print(f'Good guess, {guess} is one of the letters')
         else:
             print(f"Sorry, {guess} is not in the word. Try again." )
