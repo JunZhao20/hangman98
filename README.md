@@ -25,6 +25,12 @@ PATH: your-directory/hangman98/hangman
 
 ## How to run:
 
+1.  Once you are are in the current directory (Check File Navigation)
+
+2.  Run this in the terminal:
+
+        'python3 milestone_4.py'
+
 ## How to play:
 
 - Enter a letter to guess the word
