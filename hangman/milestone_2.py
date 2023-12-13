@@ -1,13 +1,15 @@
 import random as rd
 
-word_list = ['mangos', 'bananas', 'grapes', 'oranges', 'watermelon']
+list_of_words = ['mangos', 'bananas', 'grapes', 'oranges', 'watermelon']
 
-randomWord = rd.choice(word_list)
+randomWord = rd.choice(list_of_words)
 
-guess = input('Enter a letter: ')
+guess_letter = input('Enter a letter: ')
 
-if guess.isalpha() and len(guess) == 1:
-    print('Good guess')
-    
-else:
-    print("Oops! That is not a valid input.")
+
+def guess_input_validation(guess_letter):
+    if guess_letter.isalpha() and len(guess_letter) == 1:
+        print('Good guess')
+        
+    else:
+        print("Oops! That is not a valid input.")
