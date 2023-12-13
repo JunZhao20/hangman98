@@ -4,7 +4,14 @@ Hangman is a classic game in which a player thinks of a word and the other playe
 
 This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it.
 
+## Aim
+
+The aim of this project is to create a game using OOP to further my knowledge on the core principles of OOP, which are abstraction and encapsulation.
+
 ## Features:
+
+- Ask for user to guess a word one letter at a time
+- letter validation for applicable letters (single letter and is in the alphabet)
 
 ## Installation:
 
@@ -14,6 +21,10 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 
 ## File navigation:
 
+PATH: your-directory/hangman98/hangman
+
 ## How to run:
 
 ## How to play:
+
+- Enter a letter to guess the word
