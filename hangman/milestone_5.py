@@ -89,10 +89,15 @@ class Hangman:
                 self.list_of_guesses.append(guess)
                 break
         
-        
                 
                 
     def play_game(word_list):
+        """
+        This function is used to play the game.
+        
+        args :
+            word_list (list) : takes in a guess from user to use for the random word selection.
+        """
         num_lives = 5
         game = Hangman(word_list, num_lives)
         
