@@ -77,7 +77,7 @@ class Hangman:
         
         """
         while True:
-            print(self.word)
+            
             print(self.word_guessed)
             guess = input('Enter a letter: ')
             if guess.isalpha() is not True and len(guess) != 1:
