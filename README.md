@@ -10,10 +10,10 @@ The aim of this project is to create a game using OOP to further my knowledge on
 
 ## Features:
 
-- Ask for user to guess a word one letter at a time
+- Ask the user to guess a word one letter at a time
 - letter validation for applicable letters (single letter and is in the alphabet)
-- Player has 5 lives
-- Checks wether a letter has been used or not
+- The player has 5 lives
+- Checks whether a letter has been used or not
 
 ## Installation:
 
@@ -27,9 +27,9 @@ PATH: your-directory/hangman98/hangman
 
 ## How to run:
 
-1.  Once you are are in the current directory (Check File Navigation)
+1.  Once you are in the current directory (Check File Navigation)
 
-2.  Put in your list of words in to Hangman.play_game(['your list'])
+2.  Put your list of words into Hangman.play_game(['your list'])
 
 3.  Run this in the terminal:
 
